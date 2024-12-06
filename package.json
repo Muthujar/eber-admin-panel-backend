@@ -1,0 +1,20 @@
+{
+    "name": "cors-proxy-server",
+    "version": "1.0.0",
+    "description": "A proxy server to bypass CORS issues with third-party APIs.",
+    "main": "src/app.js",
+    "scripts": {
+      "start": "node src/app.js",
+      "dev": "nodemon src/app.js"
+    },
+    "dependencies": {
+      "axios": "^1.4.0",
+      "cors": "^2.8.5",
+      "dotenv": "^16.1.0",
+      "express": "^4.18.2"
+    },
+    "devDependencies": {
+      "nodemon": "^3.0.0"
+    }
+  }
+  
