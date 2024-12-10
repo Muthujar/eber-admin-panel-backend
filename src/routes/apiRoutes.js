@@ -338,10 +338,10 @@ router.get("/integration/point_transaction", async (req, res) => {
   console.log(req.query, "req");
 
   try {
-    const { page, limit, display_name } = req.query;
+    const { page, limit, transaction_no } = req.query;
 
     const response = await apiClient.get("/integration/point_transaction", {
-      params: { page, limit, display_name },
+      params: { page, limit, transaction_no },
     });
 
     res.json(response.data);
